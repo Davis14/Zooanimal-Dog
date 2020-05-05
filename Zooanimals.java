@@ -58,5 +58,3 @@ package zooanimals;
             return puppers.maxTemp;
         }
     }
-
-}
