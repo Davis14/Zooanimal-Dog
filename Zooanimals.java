@@ -1,21 +1,22 @@
-public class Animal implements iAnimal{
-        class Dog{
+    public class Dog implements iAnimal {
+        
+        private int dogTag;
+        private final String name;
+        private final int minTemp = 45;
+        private final int maxTemp = 90;
+        
+        public Dog(int dogTag, String name){
             
-            public String animalType = "Dog";
-            public int tagNumber;
-            public int minTemp = 45;
-            public int maxTemp = 90;
-           
+            this.dogTag = dogTag;
+            this.name = name;
+            
         }
-        private Dog puppers;
+        
         
         @Override
         public String getAnimalType(){
-           
-           
-           puppers = new Dog();
-           puppers.animalType = "Dog";
-           return  puppers.animalType = "Dog";
+
+           return this.name;
         
             
         }
@@ -23,25 +24,27 @@ public class Animal implements iAnimal{
         @Override
         public int getIdTag(){
         
-            return puppers.tagNumber;
+            return this.dogTag;
         }
         
         @Override
         public void setIdTag(int anIdTag){
             
-            puppers.tagNumber = anIdTag;
+           this.dogTag = anIdTag;
            
         }
         
         @Override
         public int getMinTemperature(){
-            
-            return puppers.minTemp;
+        
+           
+            return minTemp;
         }
         
         @Override
         public int getMaxTemperature(){
             
-            return puppers.maxTemp;
+            return maxTemp;
         }
     }
+}
