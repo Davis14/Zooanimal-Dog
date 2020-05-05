@@ -1,4 +1,4 @@
-public static class Animal implements iAnimal{
+public class Animal implements iAnimal{
         class Dog{
             
             public String animalType = "Dog";
